@@ -1,0 +1,21 @@
+.containerCelds {
+  position: relative;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2px;
+  width: min( min(450px, 100vh), 100%);
+  border-radius: 10px;
+  border: 2px solid #56afea;
+  box-shadow: 0 0 10px #56afea, 0 0 20px #56afea;
+  background: #56afea;
+  overflow: hidden;
+  
+}
+
+.blockBoard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

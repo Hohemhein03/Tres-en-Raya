@@ -1,0 +1,88 @@
+/* Oculta el fondo y el marco del modal */
+.MuiDialog-paper {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+
+/* Ajusta el contenido para que no tenga padding extra */
+.dialogContent, .dialogTitle {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
+.dialogTitle {
+    color: white;
+    font-size: 3.7rem !important;
+    
+}
+
+.containerIcon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.containerIcon .figureO {
+  font-size: 8rem;
+  color: #fff;
+  filter: drop-shadow(0 0 2px #56afea) drop-shadow(0 0 4px #56afea)
+    drop-shadow(0 0 8px #56afea);
+}
+
+.containerIcon .figureX {
+  font-size: 9rem;
+  color: #fff;
+  filter: drop-shadow(0 0 2px #ad154e) drop-shadow(0 0 4px #ad154e)
+    drop-shadow(0 0 8px #ad154e);
+}
+
+.dialog {
+  z-index: 1 !important;
+}
+/*Copilot*/
+
+.rain-x-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.rain-x {
+  position: absolute;
+  top: -2.5rem;
+  color: #ad154e;
+  opacity: 0.7;
+  animation: rain 1.8s linear infinite, spin 1.8s linear infinite;
+}
+.rain-o {
+  position: absolute;
+  top: -2.5rem;
+  color: #56afea;
+  opacity: 0.7;
+  animation: rain 1.8s linear infinite, spin 1.8s linear infinite;
+}
+
+@keyframes rain {
+  to {
+    top: 100%;
+    opacity: 0.2;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(720deg) scale(0.7);
+  }
+}

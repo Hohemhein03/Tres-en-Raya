@@ -1,0 +1,31 @@
+.containerTurn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.containerTurn .figureO {
+  font-size: 8rem;
+  color: #fff;
+  filter: drop-shadow(0 0 5px #56afea) drop-shadow(0 0 10px #56afea)
+    drop-shadow(0 0 20px #56afea);
+}
+
+.containerTurn .figureX {
+  font-size: 9rem;
+  color: #fff;
+  filter: drop-shadow(0 0 5px #ad154e) drop-shadow(0 0 10px #ad154e)
+    drop-shadow(0 0 20px #ad154e);
+}
+.containerTurn .figureO,
+.containerTurn .figureX {
+  transition: opacity 0.8s ease;
+}
+
+.active {
+  opacity: 1;
+}
+.noActive {
+  opacity: 0.5;
+}

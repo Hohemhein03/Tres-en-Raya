@@ -1,0 +1,51 @@
+.celd {
+  width: 100%;
+  height: 100%;
+  background: #181c23;
+  border: 0px solid transparent !important;
+}
+
+.icon-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.celd .icon-container .icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00e1ff;
+  text-shadow: 0 0 10px #00e1ff;
+}
+.celd .icon-container .figure_O {
+  color: #fff;
+  filter: drop-shadow(0 0 5px #56afea) drop-shadow(0 0 10px #56afea)
+    drop-shadow(0 0 20px #56afea);
+}
+
+.celd .icon-container .figure_X {
+  color: #fff;
+  filter: drop-shadow(0 0 5px #ad154e) drop-shadow(0 0 10px #ad154e)
+    drop-shadow(0 0 20px #ad154e);
+}
+
+.noActive {
+  opacity: 0.5;
+  transition: opacity 1s ease;
+}
+
+.Active {
+  animation: intermitentShadow 0.9s infinite alternate ease-in-out;
+}
+
+@keyframes intermitentShadow {
+  to {
+    scale: 0.9;
+  }
+  from {
+    scale: 1;
+  }
+}
