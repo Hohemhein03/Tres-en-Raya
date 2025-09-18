@@ -57,4 +57,4 @@ Este proyecto está bajo la licencia MIT.
 
 ---
 
-Desarrollado por [Tu Nombre](https://github.com/tu-usuario)
+Desarrollado por Hohemhein03 (https://github.com/Hohemhein03)
